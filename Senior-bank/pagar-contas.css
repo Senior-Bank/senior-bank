@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    height: 60px;
+    background-color: #036;
+    
+}
+header nav {
+    display: flex;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+ .logo{
+    width: 100px;
+}
+
+header nav .usuario{
+    display: flex;
+    flex-direction: row;
+    margin-left: 800px;
+    margin-right: 80px;
+    font-size: 28px;
+}
+
+.header button{
+    color: #ffffff;
+    background-color: #036;
+    border-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    font-size: 18px;
+
+}
+
+.retangulo1 .box1{
+    display: flex;
+    flex-direction: row;
+}
+
+.retangulo1 .box1 .saldo{
+    font-size: 23px;
+    
+}
+
+.retangulo1{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.retangulo1 .parte1{
+    margin-left: 65px;
+    margin-top: 50px;
+    color: #036;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.retangulo1 button{
+    background-color: #036;
+    color: #ffffff;
+    padding: 8px;
+    width: 300px;
+    border: #036;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.retangulo1 .visualizar {
+    height: 40px;
+    width: 40px;
+    margin-top: 70px;
+}
+
+.retangulo1 .parte2{
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.retangulo1 .extrato img{
+    background-color: green;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.extrato{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 14px;
+}
+
+
+.retangulo2 h1{
+    font-size: 28px;
+    color: #036;
+    margin-top: 30px;
+    margin-left: 6%;
+}
+
+.retangulo2 .servico img{
+    width: 80px;
+    height: 80px;
+}
+
+.retangulo2 .acoes{
+    padding-top: 40px;
+
+}
+
+.retangulo2 .servico p{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.acoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.acoes .servico{
+    padding: 50px;
+    text-align: center;
+}
+
+.servico{
+    background-color: #036;
+    border-radius: 5px;
+    height: 242px;
+    width: 292px;
+    font-size: 25px;
+}
+
+footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 65px;
+    margin-right: 50px;
+}
+
+footer h1{
+    color: #036;
+    font-size: 28px;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+footer h2{
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+footer h3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+footer .especialista {
+    background-color: #036;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    width: 480px;
+    height: 50px;
+    font-size: 25px;
+   
+}
+footer{
+   margin-top: 5%;
+   margin-left: 3%;
+   margin-right: 5%;
+  
+}
+
+.body{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body h1{
+    color: #036;
+    font-size: 30px;
+}
+
+.body h2{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.conta{
+    border: #036;
+    border-style: solid;
+    border-radius: 5px;
+    width: 900px;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.conta p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #036;
+}
+
+.conta img{
+    height: 60px;
+    width: 60px;
+}
+
+.check{
+    height: 20px;
+    width: 20px;
+}
+
+.pagar{
+    background-color: #036;
+    color: #ffffff;
+    border: #036;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.voltar img{
+    height: 30px;
+    position: relative;
+    top: 10px;   
+    margin-left: 20px;
+}
