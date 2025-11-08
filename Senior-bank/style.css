@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,18 +12,26 @@ header{
     display: flex;
     height: 60px;
     background-color: #036;
+    
+}
+header nav {
+    display: flex;
+    
 }
 
 .header{
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-left: 65px;
     color: #ffffff;
     font-size: 20px;
 }
 
-header .usuario{
+header .logo{
+    width: 100px;
+}
+
+header nav .usuario{
     display: flex;
     flex-direction: row;
     margin-left: 800px;
@@ -46,11 +55,16 @@ header .usuario{
     flex-direction: row;
 }
 
+.retangulo1 .box1 .saldo{
+    font-size: 23px;
+    
+}
+
 .retangulo1{
     background-color: #f1f1f1;
-    height: 200px;
     display: flex;
     justify-content: space-between;
+    padding: 50px 50px;
 }
 
 .retangulo1 .parte1{
@@ -58,7 +72,7 @@ header .usuario{
     margin-top: 50px;
     color: #036;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .retangulo1 button{
@@ -84,9 +98,14 @@ header .usuario{
 }
 
 .retangulo1 .extrato img{
-    background-color: green;
+    background-color: rgb(187, 4, 4);
     border-radius: 3px;
     margin-right: 8px;
+}
+
+.seta-transferencia{
+    width: 50px;
+    
 }
 
 .extrato{
@@ -101,25 +120,46 @@ header .usuario{
     font-size: 14px;
 }
 
+.extrato-saida{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.retangulo1 .extrato-saida img{
+    background-color: green;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
 
 .retangulo2 h1{
-    font-size: 20px;
+    font-size: 28px;
     color: #036;
     margin-top: 30px;
-    margin-left: 65px;
+    margin-left: 6%;
 }
 
 .retangulo2 .servico img{
     width: 80px;
     height: 80px;
-    margin-top: 20px;
-    margin-left: 85px;
+}
+
+.retangulo2 .acoes{
+    padding-top: 40px;
+
 }
 
 .retangulo2 .servico p{
     color: #ffffff;
     text-align: center;
-    font-weight: bold;
+    
 }
 
 .acoes{
@@ -128,12 +168,17 @@ header .usuario{
     justify-content: space-evenly;
 }
 
+.acoes .servico{
+    padding: 50px;
+    text-align: center;
+}
+
 .servico{
     background-color: #036;
-    margin: 10px;
     border-radius: 5px;
-    height: 150px;
-    width: 250px;
+    height: 242px;
+    width: 292px;
+    font-size: 25px;
 }
 
 footer .content{
@@ -147,14 +192,14 @@ footer .content{
 
 footer h1{
     color: #036;
-    font-size: 20px;
+    font-size: 28px;
     margin-left: 65px;
     margin-top: 20px;
 }
 
 footer h2{
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 footer h3{
@@ -165,13 +210,18 @@ footer h3{
 footer .especialista {
     background-color: #036;
     color: #ffffff;
-    border: #036;
+    border:none;
     border-radius: 5px;
-    padding: 5px;
-    width: 400px;
-    height: 40px;
-    font-size: 18px;
-    margin-right: 20px;
+    width: 480px;
+    height: 50px;
+    font-size: 25px;
+   
+}
+footer{
+   margin-top: 5%;
+   margin-left: 3%;
+   margin-right: 5%;
+  
 }
 
 .body{
@@ -240,3 +290,4 @@ footer .especialista {
     align-items: center;
     gap: 10px;
 }
+
