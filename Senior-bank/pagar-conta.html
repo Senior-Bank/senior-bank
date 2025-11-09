@@ -3,60 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="pagar-contas.css">
+    <link rel="stylesheet" href="pagar-contas.css">
     <title>Pagar boletos e contas</title>
 </head>
-<body>
 
-    <header> <!--header-->
-        
+<body>
+    <header> <!--header-->   
         <div class="header">
-            <img class="logo" src="./images/logo branca.png" alt="logo do banco">
-            <div class="usuario">
-            <p>Olá, Sarah Paula</p> 
+            <img class="logo" id="logo" src="./images/logo branca.png" alt="logo do banco">
+            <nav class="nav-1">
+            <div class="usuario" id="usuario-principal">
+                <p>Olá, Sarah Paula</p> 
             </div>
-            <button class="btn-sair">Sair</button>
+            <button class="btn-sair" id="btn-sair">Sair</button>
+            </nav>
+          
         </div>
     </header> <!--fecha header-->
 
-    <div class="body"> <!--body-->
-        <div class="voltar">
-           <a href="./index.html"><img src="https://cdn-icons-png.flaticon.com/512/60/60793.png" alt=""></a>
+    <!-- começo do main -->
+    <main>
+        <!-- botão voltar -->
+        <div class="voltar" id="voltar-inicio">
+           <a href="./index.html"><img src="./images/seta-esquerda.png" alt=""></a>
         </div>
         
-        <div>
-        <h1>Pagar contas pendentes</h1>
-        <h2>Selecione as contas que deseja pagar e confirme.</h2>
+        <!-- container dos textos do topo -->
+        <div class="container-textoContas-disponivels">
+            <h1>Pagar contas pendentes</h1>
+            <h2>Selecione as contas que deseja pagar e confirme.</h2>
         </div>
 
-        <div class="conta">
-            <img src="./images/luz.svg" alt="icon de casa">
-            <div>
-            <h1>Conta de luz</h1>
-            <h2>Vencimento: 28/11/2025</h2>
+        <!-- conta água -->
+        <div class="contas">
+            <div class="conta" id="conta-luz">
+                <img src="./images/luz.svg" alt="icon de casa" div="img-luz">
+
+                <div class="container-textoInfo-contas">
+                    <h1>Conta de luz</h1>
+                    <h2>Vencimento: 28/11/2025</h2>
+                </div>
+            
+                <div class="valor"><P>R$0,00</P></div>
+
+                <input type="checkbox" class="check">
             </div>
-            <P>R$0,00</P>
-            <input type="checkbox" class="check">
-        </div>
-    
-        <div class="conta">
-            <img src="./images/agua.svg" alt="icon de agua"> 
-            <div>
-            <h1>Conta de luz</h1>
-            <h2>Vencimento: 28/11/2025</h2>
+
+        <!-- conta luz -->
+            <div class="conta" id="conta-luz">
+                <img src="./images/agua.svg" alt="icon de agua"> 
+
+                <div class="container-textoInfo-contas">
+                    <h1>Conta de luz</h1>
+                    <h2>Vencimento: 28/11/2025</h2>
+                </div>
+
+                <div class="valor"><P>R$0,00</P></div>
+                
+                <input type="checkbox" class="check">
             </div>
-            <P>R$0,00</P>
-            <input type="checkbox" class="check">
         </div>
+    </main>
+    <!-- fechamento do main -->
 
     <div class="test">
-    <h1 class="verMais">Ver mais contas</h1>
-    <button class="pagar">Confirmar pagamento</button>
+        <h1 class="verMais">Ver mais contas</h1>
+        <button class="pagar">Confirmar pagamento</button>
     </div>
-
-    </div>
- <!-- telinha comprovante -->
-
     
 </body>
 </html>

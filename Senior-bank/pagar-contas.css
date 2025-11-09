@@ -10,13 +10,15 @@ body{
 
 header{
     display: flex;
-    height: 60px;
+    height: 70px;
     background-color: #036;
     
 }
 header nav {
     display: flex;
-    
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 8%;
 }
 
 .header{
@@ -25,18 +27,20 @@ header nav {
     margin-left: 65px;
     color: #ffffff;
     font-size: 20px;
+    width: 100%;
 }
 
- .logo{
-    width: 100px;
+header .logo{
+    width: 110px;
+    margin-left: 1%;
 }
 
 header nav .usuario{
     display: flex;
-    flex-direction: row;
-    margin-left: 800px;
-    margin-right: 80px;
     font-size: 28px;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .header button{
@@ -44,10 +48,10 @@ header nav .usuario{
     background-color: #036;
     border-color: #ffffff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     width: 80px;
     font-size: 18px;
-
+    margin-left: 15px;
 }
 
 .retangulo1 .box1{
@@ -201,18 +205,18 @@ footer{
   
 }
 
-.body{
+main{
     margin: 30px;
     display: flex;
     flex-direction: column;
 }
 
-.body h1{
+main h1{
     color: #036;
     font-size: 30px;
 }
 
-.body h2{
+main h2{
     font-size: 20px;
     font-weight: lighter;
     margin-bottom: 20px;
@@ -224,23 +228,23 @@ footer{
     border-radius: 5px;
     width: 900px;
     display: flex;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 15px;
+    margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 200px;
+    margin-left: 350px;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
 }
 
-.conta p{
+.valor p{
     font-size: 30px;
     font-weight: bold;
     color: #036;
 }
 
 .conta img{
-    height: 60px;
+    height: 80px;
     width: 60px;
 }
 
@@ -255,10 +259,14 @@ footer{
     border: #036;
     border-radius: 5px;
     padding: 5px;
-    width: 300px;
-    height: 40px;
-    font-size: 18px;
-    margin-right: 20px;
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.container-textoInfo-contas h1{
+    margin-top: 15px;
 }
 
 .test{
@@ -272,6 +280,27 @@ footer{
 .voltar img{
     height: 30px;
     position: relative;
-    top: 10px;   
-    margin-left: 20px;
+}
+
+.check{
+    height: 20px;
+    width: 20px;
+}
+
+.verMais {
+    margin-right: 50px;
+    padding: 10px;
+    color: #036;
+}
+.verMais:hover{
+   transform: scale(1.03);
+}
+.pagar:hover{
+    cursor: pointer;
+    background-color: #024;
+    transform: scale(1.03);
+}
+
+.verMais:hover{
+    cursor: pointer;
 }
