@@ -184,7 +184,12 @@ header nav .usuario{
 
 .retangulo2 .acoes{
     padding-top: 40px;
+    
+}
 
+ .retangulo2 .acoes a{
+    text-decoration: none;
+    
 }
 
 .retangulo2 .servico p{

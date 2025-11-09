@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +20,18 @@
     </header> <!--fecha header-->
 
     <main>
+        <div class="voltar" id="voltar-inicio">
+           <a href="./index.html"><img src="./imagens-cartao/seta-esquerda.png" alt=""></a>
+        </div>
         <section>
+           
             <div class="gerenciar-cartoes">
                 <h1>
                     Gerenciar meus cartões
                 </h1>
-                <h3>
+                <h2>
                     Seus cartões ativos
-                </h3>
+                </h2>
             </div>
 
                 <!-- Inicio div do cartão-->
@@ -56,14 +60,14 @@
 
                     <div class="div-opcoes">
                         <div class="div-opcoes-card">
-                            <div> 
-                                <button>
+                            <div id="bloquear"> 
+                                <button >
                                 <img src="./imagens-cartao/cadeado.png" alt="">
                                 <p>Bloquear Temporariamente</p>
                                </button>
                             </div>
 
-                            <div>
+                            <div id="segunda-via">
                                 <button>
                                 <img src="./imagens-cartao/seta.png" alt="">
                                 <p>Pedir 2ª Via</p>
@@ -72,7 +76,7 @@
                         </div>
 
                         <div class="div-opcoes-card">
-                            <div>
+                            <div id="cartao-add">
                                 <button>
                                 <img src="imagens-cartao/cartão.png" alt="">
                                 <p> Pedir cartão adicional</p>
@@ -80,7 +84,7 @@
 
                             </div>
 
-                            <div>
+                            <div id="ajustar-limite">
                                 <button>
                                 <img src="./imagens-cartao/moeda.png"    alt="">
                                 <p> Ajustar Limite</p>
@@ -93,34 +97,35 @@
              </div>
         </section>
 
-        <section>
-            <footer>
-                <div>
+        
+         
+       
+    </main>
+       <footer>
+        <div class="info-footer">
+                <div class="ajuda">
                     <h3>Outras opções</h3>
                     <p>Precisa de ajuda?</p>
                     <p>Ligue: 0800-4002-8922 </p>
-                    (Segunda a sabado, 8h 22h)
+                    <p>(Segunda a sabado, 8h 22h) </p>
                 </div>
 
-                <div>
-                    <div>
+                <div class="config-cartao">
+                    <div class="fatura">
                         <button> 
-                            <img src="" alt="">
-                            Ver fatura digital
+                            <img src="./imagens-cartao/ponto-de-interrogação.png" alt="">
+                            <p>Ver fatura digital</p>
                         </button>
                     </div>
 
-                     <div>
+                     <div class="fatura">
                         <button> 
-                            <img src="" alt="">
+                            <img src="./imagens-cartao/configuração.png" alt="">
                             <p>Configuração do Cartão </p>
                         </button>
                     </div>
 
                 </div>
             </footer>
-        </section>
-    </main>
-    
 </body>
 </html>
