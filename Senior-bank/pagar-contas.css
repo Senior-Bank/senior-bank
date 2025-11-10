@@ -304,3 +304,14 @@ main h2{
 .verMais:hover{
     cursor: pointer;
 }
+
+.box {
+  width: 150px;  
+  height: 150px;
+  overflow: hidden; /* corta o que passar */
+}
+
+.box img {
+  width: 100%;
+  height: auto;  
+}

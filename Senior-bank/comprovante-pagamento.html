@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comprovante-pagamento.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header> <!--header-->
+      <div class="header">
+        <img class="logo" src="./images/logo branca.png" alt="logo do banco">
+        <nav class="nav-1">
+            <div class="usuario">
+            <p>Olá, Sarah Paula</p> 
+            </div>
+            <button>Sair</button>
+            </nav>
+        </div>
+    </header> <!--fecha header-->
+
+<!-- começo do main -->
+  <main>
+   <div class="box-seguranca">
+      <div class="itens">
+
+        <div class="text-inicio" id="texto-inicio">
+          <a href="./pagar-conta.html"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Transparent_X.png" alt=""></a>
+          <h1>Confirmar pagamento</h1>
+            <p>Atenção: Você está prestes a finalizar o pagamento.</p>
+        </div>
+
+        <div class="model" id="modal">
+            <h3>Pagando a conta de Luz</h1>
+            <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p> 
+        </div>
+
+        <div class="valor">
+          <h1>R$200,00</h1>
+          <h2>Valor a ser debitado</h2>
+        </div>
+
+        <div class="seguranca">
+          <div class="teclado">
+            <img src="./img-comprovante-pagamento/teclado.png" alt="">
+          </div>
+          <div class="text">
+            <label>PIN de segurança:</label>
+            <input type="password" maxlength="4" placeholder="0000">
+          </div>
+        </div>
+
+        <div class="botoes">
+          <button class="confirmar" id="confirmar">Finalizar pagamento</button>
+          <button class="cancelar" id="cancelarModal">Cancelar</button>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+</html>
