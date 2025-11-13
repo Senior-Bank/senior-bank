@@ -7,7 +7,7 @@
     <title>Pagar boletos e contas</title>
 </head>
 
-<body>
+<body id="body">
     <header> <!--header-->   
         <div class="header">
             <img class="logo" id="logo" src="./images/logo branca.png" alt="logo do banco">
@@ -62,14 +62,55 @@
                 
                 <input type="checkbox" class="check">
             </div>
+            
         </div>
+          <div class="test">
+        <h1 class="verMais">Ver mais contas</h1>
+       <button class="confirmar-pagamento" id="confirmar-pagamento">Confirmar pagamento</button>
+    </div>
     </main>
     <!-- fechamento do main -->
 
-    <div class="test">
-        <h1 class="verMais">Ver mais contas</h1>
-        <a href="./comprovante-pagamento.html"><button class="pagar">Confirmar pagamento</button></a>
-    </div>
-    
+
+    <!--Inicio do pop-up-->
+     <div class="box-seguranca" style="display: none;">
+      <div class="itens">
+
+        <div class="text-inicio" id="texto-inicio">
+          <div id="div-x">
+            <img class="img-x" src="./img-comprovante-pagamento/img saida.png" alt="">
+          </div>
+          <h1>Confirmar pagamento</h1>
+            <p>Atenção: Você está prestes a finalizar o pagamento.</p>
+        </div>
+
+        <div class="model" id="modal">
+            <h3>Pagando a conta de Luz</h1>
+            <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p> 
+        </div>
+
+        <div class="valor">
+          <h1>R$200,00</h1>
+          <h2>Valor a ser debitado</h2>
+        </div>
+
+        <div class="seguranca">
+          <div class="teclado">
+            <img src="./img-comprovante-pagamento/teclado.png" alt="">
+          </div>
+          <div class="text">
+            <label>PIN de segurança:</label>
+            <input class="senha" type="password" maxlength="4" placeholder="0000">
+          </div>
+        </div>
+
+        <div class="botoes">
+          <button class="confirmar" id="confirmar">Finalizar pagamento</button>
+          <button class="cancelar" id="cancelarModal">Cancelar</button>
+        </div>
+
+      </div>
+    <script src="pagar-contas.js"></script>
 </body>
+
 </html>
