@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pagar-contas.css">
-    <title>Pagar boletos e contas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagar-contas.css">
+  <title>Pagar boletos e contas</title>
 </head>
 
 <body id="body">
-    <header> <!--header-->   
-        <div class="header">
-            <img class="logo" id="logo" src="./images/logo branca.png" alt="logo do banco">
-            <nav class="nav-1">
-            <div class="usuario" id="usuario-principal">
-                <p>Olá, Sarah Paula</p> 
-            </div>
-            <button class="btn-sair" id="btn-sair">Sair</button>
-            </nav>
-          
+  <header> <!--header-->
+    <div class="header">
+      <img class="logo" id="logo" src="./images/logo branca.png" alt="logo do banco">
+      <nav class="nav-1">
+        <div class="usuario" id="usuario-principal">
+          <p>Olá, Sarah Paula</p>
         </div>
-    </header> <!--fecha header-->
+        <button class="btn-sair" id="btn-sair">Sair</button>
+      </nav>
 
-    <!-- começo do main -->
-    <main>
-        <!-- botão voltar -->
-        <div class="voltar" id="voltar-inicio">
-           <a href="./index.html"><img src="./images/seta-esquerda.png" alt=""></a>
-        </div>
-        
-        <!-- container dos textos do topo -->
-        <div class="container-textoContas-disponivels">
-            <h1>Pagar contas pendentes</h1>
-            <h2>Selecione as contas que deseja pagar e confirme.</h2>
-        </div>
-
-        <!-- conta água -->
-        <div class="contas">
-            <div class="conta" id="conta-luz">
-                <img src="./images/luz.svg" alt="icon de casa" div="img-luz">
-
-                <div class="container-textoInfo-contas">
-                    <h1>Conta de luz</h1>
-                    <h2>Vencimento: 28/11/2025</h2>
-                </div>
-            
-                <div class="valor"><P>R$0,00</P></div>
-
-                <input type="checkbox" class="check">
-            </div>
-
-        <!-- conta luz -->
-            <div class="conta" id="conta-luz">
-                <img src="./images/agua.svg" alt="icon de agua"> 
-
-                <div class="container-textoInfo-contas">
-                    <h1>Conta de luz</h1>
-                    <h2>Vencimento: 28/11/2025</h2>
-                </div>
-
-                <div class="valor"><P>R$0,00</P></div>
-                
-                <input type="checkbox" class="check">
-            </div>
-            
-        </div>
-          <div class="test">
-        <h1 class="verMais">Ver mais contas</h1>
-       <button class="confirmar-pagamento" id="confirmar-pagamento">Confirmar pagamento</button>
     </div>
-    </main>
-    <!-- fechamento do main -->
+  </header> <!--fecha header-->
 
+  <!-- começo do main -->
+  <main id="main-fundo">
+    <!-- botão voltar -->
+    <div class="voltar" id="voltar-inicio">
+      <a href="./index.html"><img src="./images/seta-esquerda.png" alt=""></a>
+    </div>
+
+    <!-- container dos textos do topo -->
+    <div class="container-textoContas-disponivels">
+      <h1>Pagar contas pendentes</h1>
+      <h2>Selecione as contas que deseja pagar e confirme.</h2>
+    </div>
+
+    <!-- conta água -->
+    <div class="contas">
+      <div class="conta" id="conta-luz">
+        <img src="./images/luz.svg" alt="icon de casa" div="img-luz">
+
+        <div class="container-textoInfo-contas">
+          <h1>Conta de luz</h1>
+          <h2>Vencimento: 28/11/2025</h2>
+        </div>
+
+        <div class="valor">
+          <P>R$100,00</P>
+        </div>
+
+        <input type="checkbox" class="check">
+      </div>
+
+      <!-- conta luz -->
+      <div class="conta" id="conta-luz">
+        <img src="./images/agua.svg" alt="icon de agua">
+
+        <div class="container-textoInfo-contas">
+          <h1>Conta de Água</h1>
+          <h2>Vencimento: 28/11/2025</h2>
+        </div>
+
+        <div class="valor">
+          <P>R$100,00</P>
+        </div>
+
+        <input type="checkbox" class="check">
+      </div>
+
+    </div>
+    <div class="test">
+      <h1 class="verMais">Ver mais contas</h1>
+      <button class="confirmar-pagamento" id="confirmar-pagamento">Confirmar pagamento</button>
+    </div>
 
     <!--Inicio do pop-up-->
-     <div class="box-seguranca" style="display: none;">
+
+    <div class="box-seguranca" style="display: none;">
       <div class="itens">
 
         <div class="text-inicio" id="texto-inicio">
@@ -81,12 +84,12 @@
             <img class="img-x" src="./img-comprovante-pagamento/img saida.png" alt="">
           </div>
           <h1>Confirmar pagamento</h1>
-            <p>Atenção: Você está prestes a finalizar o pagamento.</p>
+          <p>Atenção: Você está prestes a finalizar o pagamento.</p>
         </div>
 
         <div class="model" id="modal">
-            <h3>Pagando a conta de Luz</h1>
-            <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p> 
+          <h3>Pagando a conta de Luz</h1>
+            <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p>
         </div>
 
         <div class="valor">
@@ -108,9 +111,38 @@
           <button class="confirmar" id="confirmar">Finalizar pagamento</button>
           <button class="cancelar" id="cancelarModal">Cancelar</button>
         </div>
-
       </div>
-    <script src="pagar-contas.js"></script>
+
+      <!--Inicio do popup de conta paga-->
+      <div class="box-seguranca" style="display: none;">
+        <div class="itens">
+
+          <div class="text-inicio" id="texto-inicio">
+            <div id="div-x">
+              <img class="img-x" src="./img-comprovante-pagamento/img saida.png" alt="">
+            </div>
+            <h1>Confirmar pagamento</h1>
+            <p>Atenção: Você está prestes a finalizar o pagamento.</p>
+          </div>
+
+          <div class="model" id="modal">
+            <h3>Pagando a conta de Luz</h1>
+              <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p>
+          </div>
+
+          <div class="valor">
+            <h1>R$200,00</h1>
+            <h2>Valor a ser debitado</h2>
+          </div>
+
+
+
+  </main>
+  <!-- fechamento do main -->
+
+
+
+  <script src="pagar-contas.js"></script>
 </body>
 
 </html>
