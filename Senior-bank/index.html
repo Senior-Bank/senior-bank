@@ -14,7 +14,9 @@
             <div class="usuario">
             <p>Olá, Sarah Paula</p> 
             </div>
-            <button>Sair</button>
+            <button>
+                <a href="login/login.html">Sair</a>
+            </button>
             </nav>
         </div>
     </header> <!--fecha header-->
@@ -24,9 +26,10 @@
             <div class="parte1">
                 <p>Seu saldo atual</p>
                     <div class="valor-saldo">
-                        <p>R$54.785,15   <button class="visualizar">
-                        <img src="./images/visu off.svg" alt="olho">
-                        </button></p>
+                        <p id="valor-saldo-p">  R$ ********** </p>  
+                        <button class="visualizar">
+                       <img id="iconeOlho" src="images/olho-visivel.png" alt="Ícone de Visibilidade">
+                        </button>
                        
                     </div>
                 <button class="saldo">Ver extrato completo</button>
@@ -75,7 +78,7 @@
         </div>
         </a>
         
-        <a href="pop-up-transferencia.html"><div class="servico">
+
             <img src="./images/setas.svg" alt="setas">
             <p>Transferir para outras contas</p>
         </div>
@@ -102,4 +105,5 @@
 
 
 </body>
+<script src="script.js"></script>
 </html>
