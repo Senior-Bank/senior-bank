@@ -6,15 +6,22 @@ const body = document.getElementById('body');
 const btncancelar = document.getElementById('cancelarModal');
 const btnFinalizarPagamento = document.getElementById('confirmar');
 const verMaisContas = document.querySelector('.verMais')
-const divContas = document.querySelector('.contas')
+const divContas = document.querySelector('.contas');
+const popupPagamentofeito = document.querySelector('.pagamento-feito')
+
 
 
 
 function abrirPopup() {
         popup.style.display = 'block';
         body.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+       
+        console.log(apertei);
+        
 
-}
+        
+};
+
 
 function fecharPopup() {
         popup.style.display = 'none'
@@ -24,13 +31,11 @@ function fecharPopup() {
 
 
 function verContas(){
-
-        
                 
         const div = document.createElement('div');
         div.classList.add('conta')
         div.innerHTML= ` 
-        <img src="./images/luz.svg" alt="icon de casa" div="img-luz">
+        <img src="./img-pagarContas/luz.svg" alt="icon de casa" div="img-luz">
 
         <div class="container-textoInfo-contas">
           <h1>Conta de telefone</h1>
@@ -48,6 +53,9 @@ function verContas(){
          
 }
 
+
+
+
 btnConfirmarPagamento.addEventListener('click',  abrirPopup);
 
 fechar.addEventListener('click', fecharPopup);
@@ -55,6 +63,10 @@ fechar.addEventListener('click', fecharPopup);
 btncancelar.addEventListener('click', fecharPopup);
 
 verMaisContas.addEventListener('click', verContas);
+
+
+
+
 
 
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagar-contas.css">
+ <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-phone-ios7-32.png">
+  <title>Pagar boletos e contas</title>
+</head>
+
+<body id="body">
+  <header> <!--header-->
+    <div class="header">
+      <img class="logo" id="logo" src="./img-pagarContas/logo branca.png" alt="logo do banco">
+      <nav class="nav-1">
+        <div class="usuario" id="usuario-principal">
+          <p>Olá, Sarah Paula</p>
+        </div>
+        <button class="btn-sair" id="btn-sair">Sair</button>
+      </nav>
+
+    </div>
+  </header> <!--fecha header-->
+
+  <!-- começo do main -->
+  <main id="main-fundo">
+    <!-- botão voltar -->
+    <div class="voltar" id="voltar-inicio">
+      <a href="../index/index.html"><img src="./img-pagarContas/seta-esquerda.png" alt=""></a>
+    </div>
+
+    <!-- container dos textos do topo -->
+    <div class="container-textoContas-disponivels">
+      <h1>Pagar contas pendentes</h1>
+      <h2>Selecione as contas que deseja pagar e confirme.</h2>
+    </div>
+
+    <!-- conta água -->
+    <div class="contas">
+      <div class="conta" id="conta-luz">
+        <img src="./img-pagarContas/luz.svg" alt="icon de casa" >
+
+        <div class="container-textoInfo-contas">
+          <h1>Conta de luz</h1>
+          <h2>Vencimento: 28/11/2025</h2>
+        </div>
+
+        <div class="valor">
+          <P>R$200,00</P>
+        </div>
+
+        <input type="checkbox" class="check">
+      </div>
+
+      <!-- conta luz -->
+      <div class="conta" id="conta-luz">
+        <img src="./img-pagarContas/agua.svg" alt="icon de agua">
+
+        <div class="container-textoInfo-contas">
+          <h1>Conta de Água</h1>
+          <h2>Vencimento: 28/11/2025</h2>
+        </div>
+
+        <div class="valor">
+          <P>R$100,00</P>
+        </div>
+
+        <input type="checkbox" class="check">
+      </div>
+
+    </div>
+    <div class="test">
+      <h1 class="verMais">Ver mais contas</h1>
+      <button class="confirmar-pagamento" id="confirmar-pagamento">Confirmar pagamento</button>
+    </div>
+
+    <!--Inicio do pop-up confimar pagamento-->
+
+    <div class="box-seguranca" style="display: none;">
+      <div class="itens">
+
+        <div class="text-inicio" id="texto-inicio">
+          <div id="div-x">
+            <img class="img-x" src="./img-pagarContas/img saida.png" alt="">
+          </div>
+          <h1>Confirmar pagamento</h1>
+          <div class="msg-atencao">
+            <img src="./img-pagarContas/atencao.png" alt="">
+            <p>Atenção: Você está prestes a finalizar o pagamento.</p>
+          </div>
+          
+        </div>
+
+        <div class="model" id="modal">
+          <h3>Pagando a conta de Luz</h1>
+            <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p>
+        </div>
+
+        <div class="valor">
+          <h1>R$200,00</h1>
+          <h2>Valor a ser debitado</h2>
+        </div>
+
+        <div class="seguranca">
+          <div class="teclado">
+            <img src="./img-comprovante-pagamento/teclado.png" alt="">
+          </div>
+          <div class="text">
+            <label>PIN de segurança:</label>
+            <input class="senha" type="password" maxlength="4" placeholder="0000">
+          </div>
+        </div>
+
+        <div class="botoes">
+          <div>
+            
+          </div>
+             <a href="">
+             <button class="confirmar" id="confirmar">Finalizar pagamento</button>
+             </a>
+            
+
+          <button class="cancelar" id="cancelarModal">Cancelar</button>
+        </div>
+      </div>
+
+  
+
+
+
+
+  </main>
+  <!-- fechamento do main -->
+   
+
+  <footer> <!--footer-->
+        <h1>Precisa de ajuda?</h1>
+        <div class="content">
+            <div>
+                <h2>Ligue: 0800-4002-8922</h2>
+                <h3>(Segunda a sábado, das 8h às 22h)</h3>
+            </div>
+            <button class="especialista">Fale com um especialista por chat de voz</button>
+        </div>
+    </footer> <!--fecha footer-->
+
+
+
+  <script src="pagar-contas.js"></script>
+</body>
+
+</html>
