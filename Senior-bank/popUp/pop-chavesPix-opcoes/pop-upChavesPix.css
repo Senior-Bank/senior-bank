@@ -1,0 +1,185 @@
+/* colors */
+:root{      
+    --color-primaria: #036;
+    --color-segundaria-azulClaro: #66B2FF;
+    --color-branco: #ffff;
+    --color-cinza: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: #036;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 8%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+}
+
+header .logo {
+    width: 110px;
+    margin-left: 1%;
+}
+
+header nav .usuario {
+    display: flex;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.header button {
+    color: #ffffff;
+    background-color: #036;
+    border-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+
+.header button a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-x img{
+    width: 30px;
+    position: absolute;
+    top: 10px;     
+    right: 10px;    
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+/* card do pop-up */
+main .cardPOP-UP{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--color-primaria);
+    border-radius: 8px;
+    padding: 15px;
+    width: 95%;
+    margin: 15px auto;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+}
+
+.header-pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px; 
+    margin-bottom: 30px; 
+}
+
+/* Circulo */
+.circulo{
+    height: 75px;
+    width: 75px;
+    background:var(--color-cinza);
+    border-radius: 50%;
+    left: 255px;
+    margin-top: -10px;   
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);  
+    margin-bottom: 15px;
+    transform: translateY(20%);
+}
+
+.textoCopiar, .textoExcluir, .textoQR{
+    display: flex;              
+    align-items: center;        
+    gap: 10px;                  
+    margin: 10px 0;
+}
+
+
+
+.lista-info li{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+
+.textos2 h3, .textos3 h3, .textos4 h3{
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.textos3 h3, .textos4 h3{
+    font-size: 30px;
+    margin-right: 120px;
+}
+
+.icon img{
+    width: 40px;
+    right: 70%;
+}
+
+.btn-fechar{
+    padding: 35px;
+}
+.btn-fechar button{
+    height: 60px;
+    width: 170px;
+    margin-top: 35px;
+    font-size: 20px;
+    background-color: var(--color-primaria);
+    color: var(--color-branco);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-fechar button:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: rgb(1, 77, 152);
+}
+.circulo .cell {
+    position: absolute;
+    top: 20%; /* sobe ou desce */
+    left: 50%;
+    transform: translateX(-70%);
+    width: 35px; /* Ajuste do tamanho do ícone */
+}
+
+.cell img{
+    width: 50px;
+}
+
+
