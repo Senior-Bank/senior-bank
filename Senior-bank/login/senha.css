@@ -59,10 +59,17 @@ img{
     margin-bottom: 10%;
 }
 
-.content-login-box p{
+.content-login-box p1{
     font-weight: bold;
 }
 
+.p{
+    display: flex;
+    margin-bottom: -50px;
+    margin-top: -18px;
+    margin-right: 200px;
+    font-size: 15px;
+}
 
 .inputs{
     padding: 10px;
@@ -73,6 +80,10 @@ img{
     width: 330px;
     font-size: 17px;
     box-shadow: 0 0 0 2px var(--cinza);
+}
+
+.olho{
+    cursor: pointer;
 }
 
 a{
@@ -95,7 +106,7 @@ a{
     text-align: center;
     cursor: pointer;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: -20px;
 }
 
 .btn-criar-conta{

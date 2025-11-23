@@ -57,6 +57,7 @@ header nav .usuario{
     width: 80px;
     font-size: 18px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .retangulo1 .box1{
