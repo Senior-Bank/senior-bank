@@ -265,7 +265,7 @@ footer .especialista {
     width: 480px;
     height: 50px;
     font-size: 25px;
-
+    cursor: pointer;
 }
 
 footer {

@@ -170,6 +170,7 @@ footer .content .color{
 footer .contatos{
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 footer h1{
