@@ -1,0 +1,137 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: #036;
+    
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 8%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+}
+
+header .logo{
+    width: 110px;
+    margin-left: 1%;
+}
+
+header nav .usuario{
+    display: flex;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header button{
+    color: #ffffff;
+    background-color: #036;
+    border-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.box-seguranca {
+    display: flex;
+    align-items: center;
+    border: 2px solid #036;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: white;
+    flex-direction: column; 
+    text-align: center;
+    width: 600px;
+    height: 480px;
+}
+
+
+.text-inicio img{
+    width: 20px;
+    margin-left: 33rem;
+}
+
+.text-inicio p {
+    font-size: 30px;
+    color: #036;
+    width: 500px;
+    height: 35px;
+    margin-left: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; 
+    font-weight: bold;
+}
+
+.dialogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chat h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #b4b4b4;
+    border-radius: 5px;
+    height: 30px;
+    align-content: center;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.voz h3 {
+    margin-top: 55px;
+    font-size: 20px;
+    background-color: #b4b4b4;
+    border-radius: 5px;
+    height: 30px;
+    align-content: center;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.botoes button {
+    margin-top: 30%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.botoes .confirmar {
+    background-color: #036;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+}
+
+.botoes .confirmar img{
+    width: 40px;
+}
+
+

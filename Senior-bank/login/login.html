@@ -26,18 +26,20 @@
 
                 <div>
                 <p>CPF</p>
-                <input type="number" class="inputs" placeholder="Digite seu CPF">
+                <input type="text" class="inputs" maxlength="11" placeholder="Digite seu CPF">
                 </div>
 
-                <div>
+                <div class="login">
                 <p>Senha</p>
-                <input type="password" class="inputs" placeholder="Digite sua senha">
+                <div style="position: relative;">
+                <img src="olho-azul.svg" alt="" style="position: absolute; left: 320px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px;">
+                <input type="password" class="inputs" maxlength="8" placeholder="Digite sua senha">
+                </div>
                 </div>
 
                 <a href="esqueceu-senha.html" class="esqueceu-senha">Esqueceu a senha?</a>
                 <button class="btn-enter">
-                    <a href="../index.html">Entrar</a>
-
+                    <a href="../index/index.html" class="btn-enter">Entrar</a>
                 </button>
                 <p>Novo aqui? <a href="cadastro.html" class="btn-criar-conta">Crie uma conta</a></p>
             </form>

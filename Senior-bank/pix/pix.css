@@ -57,6 +57,7 @@ header nav .usuario{
     width: 80px;
     font-size: 18px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .retangulo1 .box1{
@@ -170,6 +171,7 @@ footer .content .color{
 footer .contatos{
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 footer h1{

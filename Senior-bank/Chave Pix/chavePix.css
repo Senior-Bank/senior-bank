@@ -49,8 +49,6 @@ header nav .usuario {
     font-size: 28px;
     text-align: center;
     align-items: center;
-
-
 }
 
 .header button {
@@ -62,7 +60,7 @@ header nav .usuario {
     width: 80px;
     font-size: 18px;
     margin-left: 15px;
-
+    cursor: pointer;
 }
 
 .header button a {

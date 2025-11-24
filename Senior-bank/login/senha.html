@@ -23,18 +23,30 @@
         <div class="content-login"> <!--caixa de login-->
             <form class="content-login-box">
 
-                <div>
-                <p>Senha</p>
-                <input type="password" class="inputs" placeholder="Digite sua senha">
-                </div>
+            <div>
+            <a href="cadastro.html" class="voltar"><img src="./seta-azul.svg" alt="seta" style="right: 175px; position: relative;"></a>
+            </div>
 
                 <div>
-                <p>Confirme sua senha</p>
-                <input type="password" class="inputs" placeholder="Digite sua senha">
+                <p1>Senha</p1>
+                <img src="./olho-azul.svg" class="olho" alt="" style="position: absolute; left: 87%; transform: translateY(20px); width: 40px; height: 30px;">
+                <input type="password" class="inputs" maxlength="8" placeholder="Digite sua senha">
+                </div>   
+                
+                <div>
+                <p1>Confirme sua senha</p1>
+                <img src="./olho-azul.svg" class="olho" alt="" style="position: absolute; left: 87%; transform: translateY(20px); width: 40px; height: 30px;">
+                <input type="password" class="inputs" maxlength="8" placeholder="Digite sua senha">
+                </div>   
+
+                <div class="p">
+                <p>A senha deve conter: </br> 6 a 8 caracteres </br> Uma letra maiúscula </br>Um símbolo </br> Um número</p>
                 </div>
-                <a href="#">
-                <button class="btn-enter">Criar conta</button>
-                </a>
+                
+                <button class="btn-enter">
+                    <a href="../login/login.html" class="btn-enter">Criar conta</a>
+                </button>
+                
 
                 <p1>Já tem uma conta? <a href="login.html" class="btn-criar-conta">Entrar</a></p1>
             </form>

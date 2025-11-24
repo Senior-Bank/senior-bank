@@ -47,8 +47,6 @@ header nav .usuario{
     font-size: 28px;
     text-align: center;
     align-items: center;
-   
-   
 }
 
 .senha{
@@ -79,6 +77,10 @@ header nav .usuario{
     text-align: justify;
     color: #f1f1f1c0;
     margin-left: 24.5%;
+}
+
+.olho{
+    cursor: pointer;
 }
 
 .voltar{
