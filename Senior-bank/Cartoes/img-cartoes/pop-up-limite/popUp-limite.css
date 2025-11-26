@@ -1,0 +1,70 @@
+/* Estilo Básico do Contêiner */
+.aumento-limite {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilo do Rótulo do Valor */
+#valor-atual {
+    font-size: 2.5em;
+    color: #007bff; /* Cor principal do banco */
+    margin-bottom: 20px;
+}
+
+/* Esconder o slider padrão (apenas para navegadores WebKit/Chrome/Safari) */
+.slider-banco {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px; /* Altura total da área do slider */
+    background: transparent;
+}
+
+/* Estilo da Barra (Track) */
+.slider-banco::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px; /* Altura da barra */
+    cursor: pointer;
+    background: #d3d3d3; /* Cor da barra não preenchida */
+    border-radius: 4px;
+}
+
+/* Estilo do Puxador (Thumb) */
+.slider-banco::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%; /* Faz o círculo */
+    background: #007bff; /* Cor do puxador */
+    cursor: pointer;
+    margin-top: -8px; /* Centraliza verticalmente o puxador na barra (metade da diferença de altura) */
+}
+
+/* Estilo para navegadores Firefox (adicionar se necessário) */
+.slider-banco::-moz-range-track {
+    /* ... estilos do track para Firefox ... */
+}
+.slider-banco::-moz-range-thumb {
+    /* ... estilos do thumb para Firefox ... */
+}   
+
+.aumento-limite {
+    display: flex;
+    align-items: center;
+    border: 2px solid #036;
+    border-radius: 8px;
+    padding: 15px;
+    width: 95%;
+    margin: 15px auto;
+    background-color: white;
+    flex-direction: column; 
+    text-align: center;
+    width: 600px;
+    position: fixed;
+    height: 550px;
+    z-index: 5000;
+    justify-content: center;
+    top: 7%;
+    left: 33.2%;
+}
+

@@ -158,3 +158,47 @@ header nav .usuario{
 .img-x:hover{
     cursor: pointer;
 }
+
+
+footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+footer h1{
+    color: #036;
+    font-size: 28px;
+    
+}
+
+footer h2{
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+footer h3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+footer .especialista {
+    background-color: #036;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    width: 480px;
+    height: 50px;
+    font-size: 25px;
+   
+}
+footer{
+
+    padding: 40px;
+   background-color: white;
+   width: 100%;
+   margin-top: 13%;
+  
+}

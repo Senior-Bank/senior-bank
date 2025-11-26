@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popUp-limite.css">
+</head>
+<body>
+    <div class="aumento-limite">
+    <label for="limite-range">Novo Limite Solicitado:</label>
+    <h2 id="valor-atual">R$ 500,00</h2>
+    
+    <input 
+        type="range" 
+        id="limite-range" 
+        name="novo-limite"
+        min="500"         max="5000"        value="500"       step="100"        class="slider-banco"
+    >
+
+    <div class="info-limites">
+        <span>R$ 500</span>
+        <span>R$ 5.000</span>
+    </div>
+
+    <button type="submit" class="btn-solicitar">Solicitar Aumento</button>
+</div>
+</body>
+<script src="popUp-limite.js"></script>
+</html>
