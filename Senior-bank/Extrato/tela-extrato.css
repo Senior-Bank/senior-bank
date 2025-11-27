@@ -76,6 +76,30 @@ header nav .usuario{
     padding: 10px 20px;
 }
 
+.img-x img{
+    width: 30px;
+    margin-right: -130px;
+}
+
+.voltar{
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+main{
+    padding: 25px;
+    
+}
+
+main .textos {
+    margin-left: 80px;
+}
+
+main .textos h1{
+    color: var(--color-primaria);
+    font-size: 40px;
+    padding: 5px;
+}
 
 /* Estilo caixa Busca */
 .caixaBusca{
@@ -84,35 +108,6 @@ header nav .usuario{
     padding: 35px;
 }
 
-
-/* efeito contorno */
-input {
-    outline: none;
-    border: none;
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 6px;
-    background-color: #ffffff;
-
-    /* começa invisível */
-    box-shadow: 0 0 0 0 rgba(0, 51, 102, 0.527) inset;
-    transition: box-shadow .4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input:focus {
-    /* a animação dá a sensação de contorno */
-    box-shadow: 0 0 0 3px rgb(0, 51, 102) inset;
-}
-/* fim do efeito */
-
-
-.caixaBusca img{
-    width: 35px;
-    height: 35px;
-
-    transform: translateY(5px);
-}
-/* Fim do estilo caixa */
 
 
 /* começo da caixa elementos */
@@ -123,7 +118,7 @@ input:focus {
     margin: 15px auto;
     background-color:var(--color-cinza);
     width: 90rem;
-    max-height: 500px;  
+    max-height: 800px;  
     overflow-y: auto;
 }
 
@@ -160,6 +155,18 @@ input:focus {
 .preco {
     margin-left: auto;
     transform: translateY(-8px); 
+}
+
+.preco button{
+    height: 60px;
+    width: 170px;
+    margin-top: 35px;
+    font-size: 20px;
+    background-color: var(--color-primaria);
+    color: var(--color-branco);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 
