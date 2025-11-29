@@ -116,11 +116,6 @@ header nav .usuario{
     margin-right: 200px;
 }
 
-.retangulo1 .extrato img{
-    background-color: green;
-    border-radius: 3px;
-    margin-right: 8px;
-}
 
 .extrato{
     display: flex;

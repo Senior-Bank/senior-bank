@@ -60,6 +60,11 @@ header nav .usuario{
     cursor: pointer;
 }
 
+.seta-pix{
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
 .retangulo1 .box1{
     display: flex;
     flex-direction: column;
@@ -71,15 +76,13 @@ header nav .usuario{
     padding: 5px;
 }
 
-.retangulo1 .seta-pix{
-    display: flex;
-}
 
-.retangulo1 .seta-pix p{
+.retangulo1 p{
     font-weight: bold;
     font-size: 30px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-bottom: 5px;
+    color: var(--azul);
 }
 
 .retangulo1{
@@ -88,6 +91,7 @@ header nav .usuario{
     justify-content: space-between;
     padding: 50px 50px;
     margin-top: -20px;
+    margin-left: 10px;
 }
 
 .seta-transferencia{
@@ -108,6 +112,7 @@ header nav .usuario{
 
 .retangulo2{
     margin-top: -26px;
+    margin-left: -60px;
 }
 
 
@@ -190,6 +195,49 @@ footer h3{
     font-weight: bold;
     font-size: 16px;
     margin-top: 20px;
+}
+
+
+.footer1 .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 65px;
+    margin-right: 50px;
+}
+
+.footer1 h1 {
+    color: #036;
+    font-size: 28px;
+    margin-left: 65px;
+}
+
+.footer1 h2 {
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.footer1 h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.footer1 .especialista {
+    background-color: #036;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 480px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footer1{
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 footer{

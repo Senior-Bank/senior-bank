@@ -69,6 +69,11 @@ header nav .usuario{
     margin-left: 15px;
 }
 
+.voltar{
+    margin-left: 72px;
+    margin-top: 43px;
+}
+
 .img-header{
     display: flex;
     width: 100%;

@@ -68,6 +68,13 @@ header nav .usuario {
     color: white;
 }
 
+
+.voltar{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
 .voltar img{
     width: 34px;
 }
