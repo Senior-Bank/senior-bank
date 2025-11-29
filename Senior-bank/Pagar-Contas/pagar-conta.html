@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pagar-contas.css">
- <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-phone-ios7-32.png">
+  <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-phone-ios7-32.png">
   <title>Pagar boletos e contas</title>
 </head>
 
@@ -17,9 +17,9 @@
         <div class="usuario" id="usuario-principal">
           <p>Olá, Sarah Paula</p>
         </div>
-          <a href="../login/login.html">
-             <button>Sair</button>
-          </a>
+        <a href="../login/login.html">
+          <button>Sair</button>
+        </a>
       </nav>
 
     </div>
@@ -41,7 +41,7 @@
     <!-- conta água -->
     <div class="contas">
       <div class="conta" id="conta-luz">
-        <img src="./img-pagarContas/luz.svg" alt="icon de casa" >
+        <img src="./img-pagarContas/luz.svg" alt="icon de casa">
 
         <div class="container-textoInfo-contas">
           <h1>Conta de luz</h1>
@@ -80,7 +80,7 @@
     <!--Inicio do pop-up confimar pagamento-->
 
     <div class="box-seguranca" style="display: none;">
-      <div class="itens">
+      <form class="itens" action="../popUp/pop-up-PIX.html" method="get">
 
         <div class="text-inicio" id="texto-inicio">
           <div id="div-x">
@@ -91,12 +91,11 @@
             <img src="./img-pagarContas/atencao.png" alt="">
             <p>Atenção: Você está prestes a finalizar o pagamento.</p>
           </div>
-          
         </div>
 
         <div class="model" id="modal">
-          <h3>Pagando a conta de Luz</h1>
-            <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p>
+          <h3>Pagando a conta de Luz</h3>
+          <p style="color:rgb(94, 94, 94)">Vencimento: 28/10/2025</p>
         </div>
 
         <div class="valor">
@@ -106,48 +105,44 @@
 
         <div class="seguranca">
           <div class="teclado">
-            <img src="./img-comprovante-pagamento/teclado.png" alt="">
+            <img src="./img-pagarContas/teclado.png" alt="">
           </div>
           <div class="text">
-            <label>PIN de segurança:</label>
-            <input class="senha" type="password" maxlength="4" placeholder="0000">
+            <label for="pin-seguranca">PIN de segurança:</label>
+            <input class="senha" id="pin-seguranca" type="password" maxlength="4" placeholder="0000" required
+              minlength="4" pattern="\d{4}">
           </div>
         </div>
 
         <div class="botoes">
-          <div>
-            
-          </div>
-             <a href="../popUp/pop-up-PIX.html">
-             <button class="confirmar" id="confirmar">Finalizar pagamento</button>
-             </a>
-            
-
-          <button class="cancelar" id="cancelarModal">Cancelar</button>
+          <button class="confirmar" type="submit" id="confirmar">Finalizar pagamento</button>
+          <button class="cancelar" id="cancelarModal" type="button">Cancelar</button>
         </div>
-      </div>
 
-  
+      </form>
+    </div>
+
+
 
 
 
 
   </main>
   <!-- fechamento do main -->
-   
+
 
   <footer> <!--footer-->
-        <h1>Precisa de ajuda?</h1>
-        <div class="content">
-            <div>
-                <h2>Ligue: 0800-4002-8922</h2>
-                <h3>(Segunda a sábado, das 8h às 22h)</h3>
-            </div>
-            <a href="../especialistaVoz/especialistaVozBoleto.html">
-            <button class="especialista">Fale com um especialista por chat de voz</button>
-            </a>
-        </div>
-    </footer> <!--fecha footer-->
+    <h1>Precisa de ajuda?</h1>
+    <div class="content">
+      <div>
+        <h2>Ligue: 0800-4002-8922</h2>
+        <h3>(Segunda a sábado, das 8h às 22h)</h3>
+      </div>
+      <a href="../especialistaVoz/especialistaVozBoleto.html">
+        <button class="especialista">Fale com um especialista por chat de voz</button>
+      </a>
+    </div>
+  </footer> <!--fecha footer-->
 
 
 
