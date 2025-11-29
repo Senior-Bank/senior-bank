@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cartoes.css">
     <title>Cartões</title>
 </head>
-<body>
+
+<body id="body">
     <header> <!--header-->
         <div class="header">
             <img class="logo" src="./img-cartoes/logo branca.png" alt="logo do banco">
             <nav class="nav-1">
-            <div class="usuario">
-            <p>Olá, Sarah Paula</p> 
-            </div>
-            <a href="../login/login.html">
-             <button>Sair</button>
-            </a>
+                <div class="usuario">
+                    <p>Olá, Sarah Paula</p>
+                </div>
+                <button>Sair</button>
             </nav>
         </div>
     </header> <!--fecha header-->
 
     <main>
         <div class="voltar" id="voltar-inicio">
-           <a href="../index/index.html"><img src="./img-cartoes/seta-esquerda.png" alt=""></a>
+            <a href="../index/index.html"><img src="./img-cartoes/seta-esquerda.png" alt=""></a>
         </div>
         <section>
-           
+
             <div class="gerenciar-cartoes">
                 <h1>
                     Gerenciar meus cartões
@@ -36,99 +36,133 @@
                 </h2>
             </div>
 
-                <!-- Inicio div do cartão-->
-             <div class="secao-cartao">
-                    <div class="cartao">
-                        <div id="card-aproximacao"> 
-                            <img  src="./img-cartoes/pagamento-sem-contato.png" alt=""> 
-                        </div>
+            <!-- Inicio div do cartão-->
+            <div class="secao-cartao">
+                <div class="cartao">
+                    <div class="secao-cartao-div">
+                    <div id="card-aproximacao">
+                        <img src="./img-cartoes/pagamento-sem-contato.png" alt="">
+                    </div>
 
-                        <div id="card-chip">
-                            <img  src="./img-cartoes/chip-do-cartão.png" alt="">
-                            <p id="numero-cartao"> *234 **** *4*4 1234 </p>
-                        </div>
-                        
-                        <div class="div-nomecartao">
-                            <div>
+                    <div id="card-chip">
+                        <img src="./img-cartoes/chip-do-cartão.png" alt="">
+                        <p id="numero-cartao"> **** **** **** 1234 </p>
+                    </div>
+
+                    <div class="div-nomecartao">
+                        <div>
                             <p id="nome-cartao">Sarah Paula Silva </p>
                             <p id="vencimento">12/34</p>
-                            </div>
+                        </div>
 
-                            <div class="simbolo-mastercard">
+                        <div class="simbolo-mastercard">
                             <img src="./img-cartoes/mastercard.png" alt="">
-                            </div>
                         </div>
                     </div>
+                </div>
+                </div>
 
-                    <div class="div-opcoes">
-                        <div class="div-opcoes-card">
-                            <div id="bloquear"> 
-                                <button >
+                <div class="div-opcoes">
+                    <div class="div-opcoes-card">
+                        <div id="bloquear">
+                            <button>
                                 <img src="./img-cartoes/cadeado.png" alt="">
                                 <p>Bloquear Temporariamente</p>
-                               </button>
-                            </div>
-
-                           <a href=""> <div id="segunda-via">
-                                <button>
-                                <img src="./img-cartoes/seta.png" alt="">
-                                <p>Pedir 2ª Via</p>
-                                </button>
-                            </div>
-                            </a>
+                            </button>
                         </div>
 
-                        <div class="div-opcoes-card">
-                            <div id="cartao-add">
+                        
+                            <div id="segunda-via">
                                 <button>
+                                    <img src="./img-cartoes/seta.png" alt="">
+                                    <p>Pedir 2ª Via</p>
+                                </button>
+                            </div>
+                        
+                    </div>
+
+                    <div class="div-opcoes-card">
+                        <div id="cartao-add">
+                            <button>
                                 <img src="./img-cartoes/cartão.png" alt="">
                                 <p> Pedir cartão adicional</p>
-                                </button>
+                            </button>
 
-                            </div>
+                        </div>
 
-                            <div id="ajustar-limite">
-                                <button>
-                                <img src="./img-cartoes/moeda.png"    alt="">
+                        <div id="ajustar-limite">
+                            <button id="btn-limite">
+                                <img src="./img-cartoes/moeda.png" alt="">
                                 <p> Ajustar Limite</p>
-                                </button>
-                            </div>
-                          
+                            </button>
                         </div>
 
                     </div>
-             </div>
+
+                </div>
+            </div>
         </section>
 
-        
-         
-       
+        <!--INICIO DA DIV DE LIMITE POPUP -->
+
+        <div id="box-limite" style="display: none;">
+            <div class="box-limite-div">
+                <div class="div-x">
+                    <img src="./img-cartoes/img saida.png" alt="">
+
+                </div>
+
+                <div class="aumento-limite">
+                    <label for="limite-range">Limite atual</label>
+                    <h2 id="valor-atual">R$ 500,00</h2>
+
+                    <input type="range" id="limite-range" name="novo-limite" min="500" max="5000" value="500" step="100"
+                        class="slider-banco">
+
+                    <div class="info-limites">
+                        <span>Arraste para alterar o seu limite</span> <br>
+                        <span>R$ 500 -</span>
+                        <span>R$ 5.000</span>
+                    </div>
+
+                    <button type="submit" class="btn-confirmar">Confirmar</button>
+                   
+
+                </div>
+            </div>
+        </div>
+
+
+
+
     </main>
-       <footer>
+    <footer>
         <div class="info-footer">
-                <div class="ajuda">
-                    <h3>Outras opções</h3>
-                    <p>Precisa de ajuda?</p>
-                    <p>Ligue: 0800-4002-8922 </p>
-                    <p>(Segunda a sabado, 8h 22h) </p>
+            <div class="ajuda">
+                <h3>Outras opções</h3>
+                <p>Precisa de ajuda?</p>
+                <p>Ligue: 0800-4002-8922 </p>
+                <p>(Segunda a sabado, 8h 22h) </p>
+            </div>
+
+            <div class="config-cartao">
+                <div class="fatura">
+                    <button>
+                        <img src="./img-cartoes/ponto-de-interrogação.png" alt="">
+                        <p>Ver fatura digital</p>
+                    </button>
                 </div>
 
-                <div class="config-cartao">
-                    <div class="fatura">
-                        <button> 
-                            <img src="./img-cartoes/ponto-de-interrogação.png" alt="">
-                            <p>Ver fatura digital</p>
-                        </button>
-                    </div>
-
-                     <div class="fatura">
-                        <button> 
-                            <img src="./img-cartoes/configuração.png" alt="">
-                            <p>Configuração do Cartão </p>
-                        </button>
-                    </div>
-
+                <div class="fatura">
+                    <button>
+                        <img src="./img-cartoes/configuração.png" alt="">
+                        <p>Configuração do Cartão </p>
+                    </button>
                 </div>
-            </footer>
+
+            </div>
+    </footer>
 </body>
+<script src="cartoes.js"></script>
+
 </html>

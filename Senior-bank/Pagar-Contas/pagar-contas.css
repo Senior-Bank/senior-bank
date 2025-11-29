@@ -320,7 +320,6 @@ main h2{
     text-align: center;
     width: 600px;
     position: fixed;
-    
     height: 550px;
     z-index: 5000;
     justify-content: center;
@@ -435,10 +434,11 @@ main h2{
    
 }
 
+
 .img-x {
     cursor: pointer;
     display: flex;
-   justify-content: end;
+   margin-left: 530px;
 }
 
 .text-inicio .msg-atencao{
@@ -451,6 +451,8 @@ main h2{
     width: 95%;
     font-size: 20px;
     padding: 5px;
+    border-radius: 7px;
+    margin-left: 13px;
 
 }
 
@@ -541,6 +543,7 @@ label{
     background-color: #036;
     color: #ffffff;
     width: 200px;
+    height: 40px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -550,6 +553,7 @@ label{
     background-color: rgba(77, 147, 218, 0.788);
     color: #036;
     width: 200px;
+    height: 40px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
