@@ -1,0 +1,43 @@
+ <div class="content-login">
+            <!-- CRÍTICO: Removido 'action' do form para o JS controlar -->
+            <form method="POST"action="envia.php" class="content-login-box" id="cadastroFormEtapa1">
+                <h1>Dados Pessoais</h1>
+
+                <div>
+                    <p>Nome Completo</p>
+                    <input type="text" class="inputs" name="nome" id="nomeInput" placeholder="Digite seu nome">
+                </div>
+                
+                <div>
+                    <p>Telefone</p>
+                    <!-- Adicionado id="telefoneInput" -->
+                    <input type="number" class="inputs" name="telefone" id="telefoneInput" maxlength="11" placeholder="(DDD)912345678">
+                </div> 
+
+                <div>
+                    <p>E-mail</p>
+                    <!-- Adicionado id="emailInput" -->
+                    <input type="email" class="inputs" name="email" id="emailInput" placeholder="Digite seu e-mail">
+                </div>
+                
+                <div>
+                    <p>CPF</p>
+                    <!-- Adicionado id="cpfInput" -->
+                    <input type="text" class="inputs" name="cpf" id="cpfInput" maxlength="14" required title="Digite o CPF com pontos e traços" placeholder="Digite seu CPF">
+                </div>
+                
+                <div>
+                    <p>Data de nascimento</p>
+                    <!-- Adicionado id="dataNascimentoInput" e type="date" para melhor UX -->
+                    <input type="date" class="inputs" name="dataNascimento" id="dataNascimentoInput"> 
+                </div>
+
+               
+                <button type="submit" class="btn-enter"  id="btnContinuarCadastro">
+                    Continuar
+                </button>
+
+                <p>Já tem uma conta? <a href="login.html" class="btn-criar-conta">Entrar</a></p>
+                
+            </form>
+        </div>
