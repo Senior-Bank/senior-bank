@@ -2,31 +2,27 @@
 const btnConfirmarPagamento = document.querySelector('.confirmar-pagamento');
 const popup = document.querySelector('.box-seguranca');
 const fechar = document.querySelector('.img-x');
-const body = document.getElementById('body');
 const btncancelar = document.getElementById('cancelarModal');
 const btnFinalizarPagamento = document.getElementById('confirmar');
 const verMaisContas = document.querySelector('.verMais')
 const divContas = document.querySelector('.contas');
-const popupPagamentofeito = document.querySelector('.pagamento-feito')
+const popupPagamentofeito = document.querySelector('.pagamento-feito');
+const formConfirmarPagamento = document.querySelector('.itens');
 
 
 
 
 function abrirPopup() {
-        popup.style.display = 'block';
-        body.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-       
-        console.log(apertei);
-        
-
+        popup.style.display = 'block';   
         
 };
 
-
 function fecharPopup() {
-        popup.style.display = 'none'
-        body.style.backgroundColor = 'white';
+         popup.style.display = 'none'  
 
+         if( formConfirmarPagamento){
+                formConfirmarPagamento.reset();
+         }
 }
 
 
@@ -54,8 +50,6 @@ function verContas(){
 }
 
 
-
-
 btnConfirmarPagamento.addEventListener('click',  abrirPopup);
 
 fechar.addEventListener('click', fecharPopup);
@@ -63,6 +57,8 @@ fechar.addEventListener('click', fecharPopup);
 btncancelar.addEventListener('click', fecharPopup);
 
 verMaisContas.addEventListener('click', verContas);
+
+
 
 
 

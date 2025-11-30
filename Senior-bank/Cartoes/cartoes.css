@@ -136,7 +136,7 @@ section{
 }
 
 #bloquear button{
-    width: 360px;
+    width: 400px;
      height: 75px;
     display: flex;
     align-items: center;
@@ -153,7 +153,7 @@ section{
     width: 40px;
 }
 #segunda-via button{
-   width: 360px;
+   width: 400px;
     height: 75px;
     display: flex;
     align-items: center;
@@ -205,31 +205,79 @@ button:hover {
 }
 
 
+ .config-cartao button{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    border: none;
+    background-color: #66B2FF ;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+
+}
+ .config-cartao button .fatura{
+    text-align: center;
+    align-items: center;
+   
+}
+.config-cartao .fatura{
+    align-items: center;
+    text-align: center;
+}
+
+ .config-cartao button img{
+    width: 40px;
+  margin-left: 10px;
+    
+}
+.config-cartao p {
+    margin-left: 10px;
+}
+
+
+
+
+
 
 /* INICIO DO POPUP DO AUMENTAR LIMITE*/
+
 #box-limite{
-     display: flex;
-    align-items: center;
-    border: 3px solid #036;
-    border-radius: 8px;
-    padding: 15px;
-    width: 95%;
-    margin: 15px auto;
-    background-color: white;
-    flex-direction: column; 
-    text-align: center;
-    width: 600px;
     position: fixed;
-    height: auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: 5000;
+    border: none;
+    display: flex;
     justify-content: center;
-    top: 25%;
-    left: 35%;
+    align-items: center;
+    padding: 0;
+
+
 }
+
+.box-limite-div{
+    background-color: #f1f1f1;
+    width: 32%;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 15%;
+  
+
+
+}
+
+
 
 .div-x img{
     width: 30px;
-    margin-right: -530px;
+    margin-right: -500px;
+    margin-top: 15px;
 }
 .div-x img:hover{
     cursor: pointer;
@@ -264,24 +312,20 @@ button:hover {
    
 }
 
-.box-limite-div{
-   
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}
+
 #limite-range{
     width: 70%;
     
 }
 
 
+
 footer{
     background-color: #ffffff;
     padding-top: 3%;
+    padding-bottom: 1%;
     width: 100%;
-  margin-top: 11%;
+    margin-top: 6%;
     
 }
 
@@ -299,36 +343,21 @@ footer .ajuda h3{
 footer .ajuda p{
     font-size: 20px;
     color: #036;
-}
+}                                                                                                                                                                                                                                                                                     
 
-footer .config-cartao{
-    margin-right: 100px;  
 
-}
 
-footer .config-cartao button{
-    width: 350px;
+footer .especialista {
+    background-color: #036;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    width: 480px;
     height: 50px;
-    font-size: 20px;
-    margin-bottom: 15px;
-    display: flex;
-    border: none;
-    background-color: #66B2FF ;
-    border-radius: 7px;
-    text-align: center;
-    align-items: center;
-
-}
-footer .config-cartao button .fatura{
-    text-align: center;
-    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 150px;
    
-}
-
-footer .config-cartao button img{
-    width: 40px;
-  margin-left: 10px;
-    
 }
 
 @media (max-width: 1460px) {

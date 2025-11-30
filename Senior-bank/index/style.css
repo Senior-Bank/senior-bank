@@ -224,46 +224,43 @@ header nav .usuario {
 }
 
 
-footer .content {
+footer{
+    background-color: #ffffff;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    width: 100%;
+    margin-top: 3%;
+    
+    
+}
+
+footer .info-footer{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 65px;
-    margin-right: 50px;
-}
+    margin-left: 5%
 
-footer h1 {
+}
+footer .ajuda h3{
     color: #036;
-    font-size: 28px;
-    margin-left: 65px;
-    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;  
 }
+footer .ajuda p{
+    font-size: 20px;
+    color: #036;
+}                                                                                                                                                                                                                                                                                     
 
-footer h2 {
-    font-weight: bolder;
-    font-size: 21px;
-}
 
-footer h3 {
-    font-weight: lighter;
-    font-size: 16px;
-}
 
 footer .especialista {
     background-color: #036;
     color: #ffffff;
-    border: none;
+    border:none;
     border-radius: 5px;
     width: 480px;
     height: 50px;
     font-size: 25px;
     cursor: pointer;
-}
-
-footer {
-    margin-top: 4%;
-    margin-left: 3%;
-    margin-right: 5%;
-    margin-bottom: 50px;
+    margin-right: 150px;
+   
 }
