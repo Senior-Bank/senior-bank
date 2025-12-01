@@ -120,18 +120,114 @@ header nav .usuario {
     text-align: center;
     align-items: center;
     display: flex;
-
-
 }
 
 #iconeOlho {
     width: 25px;
 }
 
+.cabecalho-extrato h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Alinhado a esquerda como na foto */
+    font-weight: bold;
+}
+
+.item-transacao {
+    display: flex;
+    min-height: 70px; 
+}
+.coluna-data {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;
+    margin-right: 10px;
+    color: #666;
+}
+
+.coluna-data .dia {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.coluna-data .mes {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Coluna do Divisor (Linha) */
+.coluna-divisor {
+    position: relative;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* A linha vertical cinza */
+.coluna-divisor .linha {
+    width: 1px;
+    background-color: #8f8e8e;
+    height: 100%;
+    position: absolute;
+    top: 0px; /* Começa um pouco abaixo para alinhar com o texto */
+    left: 50%;
+}
+
+/* Coluna de Conteúdo (Descrição e Valor) */
+.coluna-conteudo {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px; /* Espaço entre itens */
+    padding-left: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .titulo {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+    font-weight: normal;
+}
+
+.info .subtitulo {
+    font-size: 19px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.valor {
+    font-size: 19px;
+    font-weight: bold;
+    white-space: nowrap; /* Não quebrar linha no valor */
+}
+
+/* Cores do valor */
+.valor.valor-negativo {
+    color: #c30000; 
+}
+
+.valor.valor-positivo {
+    color: rgb(7, 131, 15); /* Azul do seu banco para positivo */
+}
+
+
+.item-transacao, .coluna-data:not(:empty) + .coluna-divisor {
+    margin-left: 0; 
+}
+
 .retangulo1 .parte2 {
     flex-direction: column;
     margin-right: 200px;
-
 }
 
 .retangulo1 .extrato img {
@@ -140,38 +236,33 @@ header nav .usuario {
     margin-right: 8px;
 }
 
-.seta-transferencia {
-    width: 50px;
-
-}
-
 .extrato {
-    display: flex;
-    flex-direction: row;
     padding: 10px;
-    margin: 10px;
-    height: 50px;
-    width: 330px;
-    font-size: 17px;
 }
 
 .extrato-saida {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 1;
+    margin-bottom: 12px;
+    font-size: 20px;
+    gap: 10px;
+    padding-bottom: 10px; 
+}
+
+.extrato-saida img{
     height: 50px;
-    width: 310px;
-    font-size: 17px;
-    border-bottom: solid 1px #000000;    
 }
 
-.retangulo1 .extrato-saida img {
-    background-color: green;
-    border-radius: 3px;
-    margin-right: 8px;
+.valor{
+    margin-left: auto;
+    font-size: 23px;
 }
 
+.extrato h1{
+    text-align: center;
+    padding: auto;
+}
 
 .retangulo2 h1 {
     font-size: 28px;
@@ -183,6 +274,15 @@ header nav .usuario {
 .retangulo2 .servico img {
     width: 80px;
     height: 80px;
+}
+
+.parte2{
+    border: 2px solid rgb(230, 229, 229);
+    border-radius: 19px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: rgb(231, 230, 230);
+    width: 450px;
 }
 
 .retangulo2 .acoes {

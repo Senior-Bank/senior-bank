@@ -60,6 +60,18 @@ header nav .usuario{
     cursor: pointer;
 }
 
+.voltar{
+    margin-left: 5%;
+    margin-top: 1% ;
+    padding: 1px;
+    margin-bottom: 15px;
+}
+
+.voltar img{
+    width: 35px;
+    height: auto;
+}
+
 .retangulo1 .box1{
     display: flex;
     flex-direction: column;
@@ -69,6 +81,7 @@ header nav .usuario{
     font-size: 20px;
     border-radius: 10px;
     padding: 5px;
+    margin-left: 5%;
 }
 
 .retangulo1 .seta-pix{
@@ -94,27 +107,9 @@ header nav .usuario{
     width: 50px;
 }
 
-.extrato{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: var(--branco);
-    height: 50px;
-    width: 300px;
-    font-size: 14px;
-}
-
 .retangulo2{
     margin-top: -26px;
-}
-
-
-.retangulo2 h1{
-    font-size: 28px;
-    color: var(--azul);
-    margin-top: 30px;
+    
 }
 
 .retangulo2 .servico img{
@@ -124,13 +119,13 @@ header nav .usuario{
 
 .retangulo2 .servico p{
     color: var(--branco);
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .acoes{
     display: flex;
     flex-direction: row;
-    margin-left: 6%;
+    margin-left: -25px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -142,14 +137,13 @@ header nav .usuario{
 
 .servico{
     background-color: var(--azul);
-    border-radius: 5px;
+    border-radius: 10px;
     height: 150px;
     width: 150px;
-    font-size: 20px;
 }
 
 hr{
-    width: 80%;
+    width: 82%;
     justify-self: center;
     color: var(--azul);
     margin-top: 20px;
@@ -157,21 +151,29 @@ hr{
 
 footer .content{
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 65px;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 footer .content .color{
     background-color: var(--cinza-escuro);
-    border-radius: 50px;
-    padding: 34px;
+    border-radius: 50%;
+    width: 80px; 
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 footer .contatos{
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    width: 100%;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    padding: 0 40px;
 }
 
 footer h1{
@@ -182,6 +184,7 @@ footer h1{
 }
 
 footer h2{
+    font-weight: bold;
     font-weight: bolder;
     font-size: 20px;
 }
@@ -190,13 +193,97 @@ footer h3{
     font-weight: bold;
     font-size: 16px;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 footer{
-   margin-top: 4%;
-   margin-left: 3%;
-   margin-right: 5%;
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 5%;
 }
 
+
+footer a {
+    text-decoration: none; 
+}
+
+/* Para monitores (> 1024px) */
+@media (min-width: 1920px) {
+
+    .header {
+        margin-left: 100px; 
+    }
+    header nav .usuario p {
+        font-size: 32px;
+    }
+    
+
+    .header button {
+        padding: 8px 15px; 
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .voltar img{
+        width: 45px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .voltar .texto h1 {
+        font-size: 38px;
+    }
+
+    
+    .retangulo1 .box1{
+        height: 45px; 
+        font-size: 24px; 
+        padding: 10px; 
+        width: 85%;
+    }
+
+   
+    .servico {
+        height: 180px;
+        width: 180px;
+        border-radius: 15px;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+
+    hr{
+       margin-right: 65px;
+       margin-top: 40px;
+    }
+
+  
+    .retangulo2 .servico img{
+        width: 60px;
+        height: 60px;
+    }
+    
+  
+    .retangulo2 .servico p {
+        font-size: 18px;
+    }
+    
+   
+    footer .content .color {
+        width: 100px; 
+        height: 100px;
+    }
+    
+    footer h1{
+        margin-top: 50px;
+    }
+   
+    footer h2 {
+        font-size: 28px;
+    }
+    
+  
+    footer h3 {
+        font-size: 18px;
+    }
+}
 
 
