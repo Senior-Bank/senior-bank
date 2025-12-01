@@ -70,14 +70,13 @@ header nav .usuario{
     height: 480px;
 }
 
-
 .text-inicio img{
     width: 20px;
     margin-left: 33rem;
 }
 
-.text-inicio p {
-    font-size: 30px;
+.text-inicio h1 {
+    font-size: 40px;
     color: #036;
     width: 500px;
     height: 35px;
@@ -88,55 +87,29 @@ header nav .usuario{
     font-weight: bold;
 }
 
+.text-inicio p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
 .dialogo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.chat h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    background-color: #b4b4b4;
-    border-radius: 5px;
-    height: 30px;
-    align-content: center;
-    font-weight: lighter;
-    padding: 5px;
+.chat input{
+    padding: 2px;
+    width: 550px;
+    font-size: 25px;
+    border-radius: 15px;
+
 }
 
-.voz h3 {
-    margin-top: 55px;
-    font-size: 20px;
-    background-color: #b4b4b4;
-    border-radius: 5px;
-    height: 30px;
-    align-content: center;
-    font-weight: lighter;
-    padding: 5px;
+.chat img{
+    width: 10px;
+    height: auto;
 }
 
-.botoes button {
-    margin-top: 30%;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.botoes .confirmar {
-    background-color: #036;
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50px;
-}
-
-.botoes .confirmar img{
-    width: 40px;
-    cursor: pointer;
-}
-
-.botoes .confirmar img:hover{
-    transform: scale(1.03);
-}
 
 

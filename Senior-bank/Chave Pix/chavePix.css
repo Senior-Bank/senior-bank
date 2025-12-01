@@ -68,16 +68,25 @@ header nav .usuario {
     color: white;
 }
 
-.voltar img{
-    width: 34px;
+.voltar{
+    margin-left: 5%; ;
+    padding: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
+
+.voltar img{
+    width: 35px;
+    height: auto;
+}
+
 main{
     padding: 25px;
     
 }
 
 main .textos {
-    margin-left: 80px;
+    margin-left: 95px;
 }
 
 main .textos h1{
@@ -93,6 +102,7 @@ main .textos h1{
     margin-left: 300px;
     border-radius: 10px;
     margin-top: 30px;
+
     align-items: center;
     justify-content: space-between; 
     padding-top: 10px;
@@ -112,7 +122,7 @@ main .textos h1{
 
 /* Circulo dos cards */
 .card .circle{
-    height: 75px;
+    height: 80px;
     width: 75px;
     background:var(--color-cinza);
     border-radius: 50%;
@@ -120,7 +130,6 @@ main .textos h1{
     margin-top: -10px;   
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);  
     position: absolute; 
-    
 }
 
 .circle .cell {
@@ -179,4 +188,58 @@ main .textos h1{
     margin-top: -10px;
     margin-right: 20px;
     cursor: pointer;
+}
+
+
+
+@media (min-width: 1920px){
+    .card-1, .card-2, .card-3 {
+        width: 800px; 
+        height: 100px; 
+        margin-top: 40px;
+    }
+    
+    .card .circle {
+        height: 120px; 
+        width: 120px;  
+        left: 300px; 
+    }
+    
+    .card .textos-card {
+        margin-left: 100px; 
+    }
+    .card .textos-card h2 {
+        font-size: 30px; 
+    }
+    .card .textos-card span {
+        font-size: 23px; 
+    }
+    .circle .cell, .circle .key {
+        width: 45px; 
+        transform: translateX(-90%); 
+    }
+
+    .textos p{
+        font-size: 25px;
+    }
+
+    .circle .cell img, .circle .key img {
+        width: 85px; 
+    }
+    
+    
+    .circle .cell {
+        top: 15%; 
+    }
+    .circle .key {
+        top: 30%; 
+    }
+
+    .btn-confirmar button {
+    height: 90px;
+    width: 250px;
+    margin-top: 50px;
+    font-size: 30px;
+    }
+
 }

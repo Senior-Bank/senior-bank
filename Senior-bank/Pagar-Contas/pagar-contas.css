@@ -60,14 +60,19 @@ header nav .usuario{
 }
 
 .voltar{
-    margin-left: 4%;
-    margin-top: 1%;
+    margin-left: 6%; ;
+    padding: 1px;
+    margin-top: 20px;
+}
+
+.voltar img{
+    width: 30px;
+    height: auto;
 }
 
 .container-textoContas-disponivels{
-    margin-left: 5%;
+    margin-left: 6%;
     margin-top: 1%;
-    margin-top: 2%;
 }
 
 .retangulo1 .box1{
