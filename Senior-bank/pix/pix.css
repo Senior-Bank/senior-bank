@@ -149,14 +149,15 @@ hr{
     margin-top: 20px;
 }
 
-footer .content{
+.footer .content{
     justify-content: space-between;
     margin-top: 15px;
     margin-left: 65px;
     margin-right: 40px;
+    margin-bottom:55px;
 }
 
-footer .content .color{
+.footer .content .color{
     background-color: var(--cinza-escuro);
     border-radius: 50%;
     width: 80px; 
@@ -166,7 +167,7 @@ footer .content .color{
     align-items: center;
 }
 
-footer .contatos{
+.footer .contatos{
     display: flex;
     flex-direction: row;
     cursor: pointer;
@@ -176,35 +177,75 @@ footer .contatos{
     padding: 0 40px;
 }
 
-footer h1{
+.footer h1{
     color: var(--azul);
     font-size: 28px;
     margin-left: 65px;
     margin-top: -20px;
 }
 
-footer h2{
+.footer h2{
     font-weight: bold;
     font-weight: bolder;
     font-size: 20px;
 }
 
-footer h3{
+.footer h3{
     font-weight: bold;
     font-size: 16px;
     margin-top: 20px;
     margin-left: 10px;
 }
 
-footer{
+.footer{
     margin-top: 4%;
     margin-left: 3%;
     margin-right: 5%;
 }
 
 
-footer a {
+.footer a {
     text-decoration: none; 
+}
+
+footer{
+    background-color: #ffffff;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    width: 100%;
+    margin-top: 6%;
+    
+}
+
+footer .info-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%
+
+}
+footer .ajuda h3{
+    color: #036;
+    font-size: 25px;
+    margin-bottom: 10px;  
+}
+footer .ajuda p{
+    font-size: 20px;
+    color: #036;
+}                                                                                                                                                                                                                                                                                     
+
+
+
+footer .especialista {
+    background-color: #036;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    width: 480px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 150px;
+   
 }
 
 /* Para monitores (> 1024px) */
