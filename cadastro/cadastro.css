@@ -95,7 +95,7 @@ body {
 /* --- Inputs --- */
 .inputs{
     padding: 15px 10px; 
-    height: auto;
+    height: 40px;
     border-radius: 6px;
     border: 1px solid var(--azul-claro);
     outline: none;

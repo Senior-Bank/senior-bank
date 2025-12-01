@@ -18,13 +18,13 @@
     <div class="fundo"> 
         
         <div class="topo">
-            <img src="./logo branca.png" alt="Logo Senior Bank">
-            <h1>Abra agora sua conta digital</h1>
+            <img src="./imagensCadastro/logo branca.png" alt="Logo Senior Bank">
+        
         </div>
 
         <div class="content-login">
             <!-- CRÍTICO: Removido 'action' do form para o JS controlar -->
-            <form method="POST"action="envia.php" class="content-login-box" id="cadastroFormEtapa1">
+            <form  class="content-login-box" id="cadastroFormEtapa1">
                 <h1>Dados Pessoais</h1>
 
                 <div>
@@ -47,7 +47,7 @@
                 <div>
                     <p>CPF</p>
                     <!-- Adicionado id="cpfInput" -->
-                    <input type="text" class="inputs" name="cpf" id="cpfInput" maxlength="14" required title="Digite o CPF com pontos e traços" placeholder="Digite seu CPF">
+                    <input type="text" class="inputs" name="cpf" id="cpfInput" maxlength="14"  placeholder="Digite seu CPF">
                 </div>
                 
                 <div>
@@ -57,9 +57,11 @@
                 </div>
 
                
-                <button type="submit" class="btn-enter"  id="btnContinuarCadastro">
+                <button class="btn-enter"  id="btnContinuarCadastro">
+                    <a href="../login/login.html">
                     Continuar
                 </button>
+                </a>
 
                 <p>Já tem uma conta? <a href="login.html" class="btn-criar-conta">Entrar</a></p>
                 
