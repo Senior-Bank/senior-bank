@@ -151,6 +151,7 @@ section{
     border: none;
     border-radius: 7px;
     margin-bottom: 30px;
+    gap: 12px;
 }
 
 #bloquear button img{
@@ -167,6 +168,7 @@ section{
     background-color: #036;
     border: none;
     border-radius: 7px;
+    gap: 12px;
 }
 
 #segunda-via button img{
@@ -185,6 +187,7 @@ section{
     border: none;
     border-radius: 7px;
     margin-bottom: 30px;
+    gap: 12px;
 }
 
 #cartao-add button img {
@@ -202,6 +205,7 @@ section{
     background-color: #036;
     border: none;
     border-radius: 7px;
+    gap: 12px;
 }
 
 button:hover {
