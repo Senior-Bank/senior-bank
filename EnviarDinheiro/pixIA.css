@@ -78,19 +78,11 @@ header nav .usuario{
 .text-inicio h1 {
     font-size: 40px;
     color: #036;
-    width: 500px;
-    height: 35px;
-    margin-left: 32px;
-    justify-content: center;
-    align-items: center;
     margin-top: 5px; 
     font-weight: bold;
+    margin-bottom: 25px;
 }
 
-.text-inicio p{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
 
 .dialogo{
     display: flex;
@@ -98,12 +90,25 @@ header nav .usuario{
     justify-content: space-between;
 }
 
-.chat input{
+#chave-pix, #valor-pix{
     padding: 2px;
-    width: 550px;
-    font-size: 25px;
+    width: 500px;
+    font-size: 15px;
     border-radius: 15px;
+}
 
+#valor-pix{
+    margin-top: 15px;
+}
+
+#pix-form button{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 4px;
+    background-color: #036;
+    color: #ffffff;
 }
 
 .chat img{

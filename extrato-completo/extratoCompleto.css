@@ -61,16 +61,13 @@ header nav .usuario{
 }
 
 .voltar{
-    margin-left: 6%; ;
-    padding: 1px;
-    margin-top: 20px;
+    margin-left: 5%;
+    margin-top: 2%;
 }
-
 .voltar img{
     width: 35px;
     height: auto;
 }
-
 /* Contêiner principal da Tabela de Extrato */
 .extrato-completo {
     margin: 40px auto;

@@ -9,7 +9,7 @@
   <body>
     <header> <!--header-->
       <div class="header">
-        <img class="logo" src="../../index/images/logo branca.png" alt="logo do banco">
+        <img class="logo" src="../images/logo branca.png" alt="logo do banco">
         <nav class="nav-1">
             <div class="usuario">
             <p>Olá, Maria José</p> 
@@ -28,14 +28,12 @@
         <div class="text-inicio" id="texto-inicio">
           <a href="../../pix/pix.html"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Transparent_X.png" alt="x para sair"></a>
             <h1> Área Pix </h1> 
-            <p>Digite o pix e valor </p>
         </div>
 
-        <div class="dialogo">
-            <div class="chat" id="chat">
-                <input type="text" placeholder="Ex: 10 reais para 11 5555-5555"> 
-            </div>
-        </div>
+        <form id="pix-form">
+            <input type="text" id="chave-pix" placeholder="Chave Pix (Ex: 11 99999-9999, CPF, CNPJ)" required>
+            <button type="submit">Prosseguir</button>
+        </form>
       </div>
     </div>
 
