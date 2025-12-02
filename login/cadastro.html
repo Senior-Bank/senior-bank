@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CORRIGIDO: Referencia o CSS responsivo que está sendo usado no projeto -->
     <link rel="stylesheet" href="cadastro.css"> 
+     <link rel="icon" type="image/png" href="../Cartoes/img-cartoes/logoAzul.png">
     <title>Cadastro - Senior Bank</title>
 </head>
 
@@ -12,58 +13,73 @@
 
     <!-- COLUNA 1: Imagem de Fundo (mantida para consistência visual) -->
     <div class="fundo-imagem"> 
+        <div class="color-image">
+
+        </div>
     </div>
 
     <!-- COLUNA 2: Cadastro e Background Azul -->
     <div class="fundo"> 
         
         <div class="topo">
-            <img src="./logo branca.png" alt="Logo Senior Bank">
+            <img src="./logo branca (1).png" alt="Logo Senior Bank">
             <h1>Abra agora sua conta digital</h1>
         </div>
 
         <div class="content-login">
             <!-- CRÍTICO: Removido 'action' do form para o JS controlar -->
-            <form  class="content-login-box" id="cadastroFormEtapa1">
+            <form  class="content-login-box" id="cadastroFormEtapa1" >
                 <h1>Dados Pessoais</h1>
 
                 <div>
                     <p>Nome Completo</p>
-                    <input type="text" class="inputs" name="nome" id="nomeInput" placeholder="Digite seu nome">
+                    <input type="text" class="inputs" required name="nome" id="nomeInput" placeholder="Digite seu nome">
                 </div>
                 
                 <div>
                     <p>Telefone</p>
                     <!-- Adicionado id="telefoneInput" -->
-                    <input type="number" class="inputs" name="telefone" id="telefoneInput" maxlength="11" placeholder="(DDD)912345678">
+                    <input type="number" class="inputs" required name="telefone" id="telefoneInput" maxlength="11" placeholder="(DDD)912345678">
                 </div> 
 
                 <div>
                     <p>E-mail</p>
                     <!-- Adicionado id="emailInput" -->
-                    <input type="email" class="inputs" name="email" id="emailInput" placeholder="Digite seu e-mail">
+                    <input type="email" class="inputs" required name="email" id="emailInput" placeholder="Digite seu e-mail">
                 </div>
                 
                 <div>
                     <p>CPF</p>
                     <!-- Adicionado id="cpfInput" -->
-                    <input type="text" class="inputs" name="cpf" id="cpfInput" maxlength="14" required title="Digite o CPF com pontos e traços" placeholder="Digite seu CPF">
+                    <input type="text" class="inputs" name="cpf" id="cpfInput" maxlength="11" required pattern="\d{3}\d{3}\d{3}\d{2}" title="Digite o CPF sem pontos e traços" placeholder="Digite seu CPF">
                 </div>
                 
-                <div>
-                    <p>Data de nascimento</p>
-                    <!-- Adicionado id="dataNascimentoInput" e type="date" para melhor UX -->
-                    <input type="date" class="inputs" name="dataNascimento" id="dataNascimentoInput"> 
+               <div class="login">
+                    <p>Senha</p>
+                    <div style="position: relative;">
+
+                        <img src="olho-azul.svg" alt=""
+                            style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px;">
+                        <input type="password" class="inputs" required minlength="8" placeholder="Digite sua senha">
+                    </div>
                 </div>
 
                
-                <button class="btn-enter"  id="btnContinuarCadastro">
-                    Continuar
+                <button class="btn-enter" type="submit" id="btnContinuarCadastro">
+                    Criar conta
                 </button>
 
-                <p>Já tem uma conta? <a href="login.html" class="btn-criar-conta">Entrar</a></p>
+                <p>Já tem uma conta? <a href="../login.html" class="btn-criar-conta">Entrar</a></p>
                 
             </form>
+
+            <div id="modalRedirecionamento" class="modal-alert">
+                <div class="modal-conteudo"> 
+                    <h3>Cadastro realizado com sucesso!</h3>
+                    <p>Sua conta foi criada. Clique abaixo para fazer login.</p>
+                    <button onclick="redirecionarPagina()">Fazer Login</button>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -71,4 +87,5 @@
   
 
 </body>
+<script src="cadastro.js"></script>
 </html>
