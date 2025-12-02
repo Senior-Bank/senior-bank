@@ -59,12 +59,13 @@ header nav .usuario{
     margin-left: 15px;
     cursor: pointer;
 }
+
 .voltar{
     margin-left: 5%;
     margin-top: 2%;
 }
 .voltar img{
-    width: 35px;
+    width: 20px;
     height: auto;
 }
 
@@ -84,12 +85,7 @@ header nav .usuario{
     display: flex;
 }
 
-.retangulo1 .seta-pix p{
-    font-weight: bold;
-    font-size: 30px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-}
+
 
 .retangulo1{
     display: flex;
@@ -99,9 +95,6 @@ header nav .usuario{
     margin-top: -20px;
 }
 
-.seta-transferencia{
-    width: 50px;
-}
 
 .retangulo2{
     margin-top: -26px;
@@ -242,6 +235,69 @@ footer .especialista {
     cursor: pointer;
     margin-right: 150px;
    
+}
+
+/* --- ESTILOS DO MODAL --- */
+.modal-confirmacao {
+    display: none; 
+    position: fixed;
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-confirmacao.ativo {
+    display: block; 
+}
+
+.modal-conteudo {
+    background-color: var(--color-branco);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.destaque-valor {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: green;
+    display: block;
+    margin: 10px 0;
+}
+
+.destaque-texto {
+    font-weight: bold;
+    color: var(--color-primaria);
+}
+
+.modal-botoes {
+    margin-top: 20px;
+}
+
+.modal-botoes button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-botoes .confirmar {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.modal-botoes .cancelar {
+    background-color: #f44336; 
+    color: white;
 }
 
 /* Para monitores (> 1024px) */
