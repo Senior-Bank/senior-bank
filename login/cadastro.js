@@ -6,7 +6,7 @@ function mostrarModal(){
 }
 
 function redirecionarPagina(){
-    window.location.replace("login.html")
+    window.location.replace("../login.html")
 }
 
 form.addEventListener('submit',function (event){
