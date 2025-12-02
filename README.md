@@ -14,7 +14,6 @@ focada em acessibilidade, inclusão digital para idosos e usabilidade simplifica
 ##  Tecnologias
 
 -   HTML, CSS, JS\
--   Node.js, Express\
 -   Git & GitHub
 
 ##  Instalação
