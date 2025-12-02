@@ -59,14 +59,10 @@ header nav .usuario{
     margin-left: 15px;
     cursor: pointer;
 }
-
 .voltar{
     margin-left: 5%;
-    margin-top: 1% ;
-    padding: 1px;
-    margin-bottom: 15px;
+    margin-top: 2%;
 }
-
 .voltar img{
     width: 35px;
     height: auto;
