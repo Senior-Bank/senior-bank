@@ -36,6 +36,11 @@ body {
     height: 100%;
     flex-shrink: 0;
 }
+.color-image{
+    background-color: #00000054;
+    width: 100vw;
+    height: 100vh;
+}
 
 
 .fundo{
@@ -49,11 +54,27 @@ body {
     padding: 20px;
     flex-shrink: 0;
 }
+ .topo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: none;
+        top: 0;
+        left: 0;
+        height: 150px;
+        background-color: var(--azul);
+        padding: 0 20px;
+        
+    }
+
+
 
 .topo img{
-    width: 200px; 
-    height: 200px;
-    margin-left: 0; 
+    width: 80px; 
+    height: 85px;
+   
+  
 }
 
 .topo h1{
