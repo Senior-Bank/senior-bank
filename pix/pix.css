@@ -65,24 +65,40 @@ header nav .usuario{
     margin-top: 2%;
 }
 .voltar img{
-    width: 20px;
+    width: 35px;
     height: auto;
 }
 
+.retangulo1 h1{
+    margin-bottom: 10px;
+}
 .retangulo1 .box1{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 30px;
+    width: 100%; 
     height: 30px;
     font-size: 20px;
     border-radius: 10px;
-    padding: 5px;
-    margin-left: 5%;
+    padding: 5px 35px 5px 10px; 
 }
 
-.retangulo1 .seta-pix{
-    display: flex;
+.seta-pix{
+    position: absolute; 
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); 
+    
+    cursor: pointer;
+    display: flex; 
+}
+
+.seta-pix img {
+    width: 35px; 
+    height: auto;
+}
+
+.input-chave {
+    position: relative; 
+    margin-left: 5%; 
+    width: 70%; 
 }
 
 
@@ -98,12 +114,11 @@ header nav .usuario{
 
 .retangulo2{
     margin-top: -26px;
-    
 }
 
 .retangulo2 .servico img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .retangulo2 .servico p{
