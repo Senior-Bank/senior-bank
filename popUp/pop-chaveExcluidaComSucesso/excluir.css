@@ -79,11 +79,7 @@ header nav .usuario{
 
 .img-confirma img{
     width: 120px;
-    margin-left: 200px;
-}
-
-.img-x img{
-    width: 30px;
+    margin-left: 115%;
 }
 
 .box{
@@ -127,6 +123,7 @@ header nav .usuario{
     font-size: 18px;
     margin-left: 1px;
     height: 40px;
+    margin-top: 15px;
 }
 
 .botoes .btn-finalizar-sair{
@@ -144,6 +141,10 @@ header nav .usuario{
 .botoes :hover{
     cursor: pointer;
     transform: scale(1.03);
+}
+
+.btn-finalizar:hover{
+    background-color: rgba(19, 92, 165, 0.671);
 }
 
 

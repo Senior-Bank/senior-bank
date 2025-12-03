@@ -117,13 +117,13 @@ header nav .usuario{
 }
 
 .retangulo2 .servico img{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height:auto;
 }
 
 .retangulo2 .servico p{
     color: var(--branco);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .acoes{
@@ -135,7 +135,7 @@ header nav .usuario{
 }
 
 .acoes .servico{
-    padding: 40px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -213,7 +213,7 @@ hr{
 }
 
 footer{
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     padding-top: 3%;
     padding-bottom: 1%;
     width: 100%;
@@ -229,7 +229,7 @@ footer .info-footer{
 }
 footer .ajuda h3{
     color: #036;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;  
 }
 footer .ajuda p{
@@ -237,16 +237,14 @@ footer .ajuda p{
     color: #036;
 }                                                                                                                                                                                                                                                                                     
 
-
-
 footer .especialista {
     background-color: #036;
     color: #ffffff;
     border:none;
     border-radius: 5px;
-    width: 480px;
+    width: 350px;
     height: 50px;
-    font-size: 25px;
+    font-size: 18px;
     cursor: pointer;
     margin-right: 150px;
    
@@ -254,7 +252,7 @@ footer .especialista {
 
 /* --- ESTILOS DO MODAL --- */
 .modal-confirmacao {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 10; 
     left: 0;
@@ -265,12 +263,9 @@ footer .especialista {
     background-color: rgba(0,0,0,0.4); 
 }
 
-.modal-confirmacao.ativo {
-    display: block; 
-}
 
 .modal-conteudo {
-    background-color: var(--color-branco);
+    background-color: var(--branco);
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -278,6 +273,7 @@ footer .especialista {
     max-width: 400px;
     border-radius: 8px;
     text-align: center;
+    z-index: 5000;
 }
 
 .destaque-valor {
@@ -392,6 +388,59 @@ footer .especialista {
     footer h3 {
         font-size: 18px;
     }
+
+    .retangulo1 .box1{
+        width: 100%; 
+    }
+
+    footer .ajuda h3{
+        font-size: 25px;
+    }
+
+    footer .ajuda p{
+        font-size: 20px;
+    }
+
+    footer .especialista {
+        width: 480px;
+        font-size: 25px;
+    }
+
+    .acoes .servico{
+        padding: 30px;
+    }
+
+    .retangulo2 .servico img{
+        width: 80px;
+        height:auto;
+    }
+
+    .retangulo2 .servico p{
+        font-size: 23px;
+    }
+
+    .footer .content .color{
+        width: 115px; 
+        height: 115px;
+    }
+
+    .footer h2{
+        font-size: 30px;
+    }
+
+    .footer h3{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .footer h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+
 }
 
 
