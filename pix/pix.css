@@ -10,16 +10,16 @@
     --cinza-escuro: #bcbfdb;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     display: flex;
     height: 70px;
-    background-color: var(--azul);
-    
+    background-color: #036;
 }
+
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -27,38 +27,45 @@ header nav {
     margin-right: 8%;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     margin-left: 65px;
-    color: var(--branco);
+    color: #ffffff;
     font-size: 20px;
     width: 100%;
 }
 
-header .logo{
+header .logo {
     width: 110px;
     margin-left: 1%;
 }
 
-header nav .usuario{
+header nav .usuario {
     display: flex;
     font-size: 28px;
     text-align: center;
-    align-items: center;  
+    align-items: center;
 }
 
-.header button{
-    color: var(--branco);
-    background-color: var(--azul);
-    border-color: var(--branco);
+.header button {
+    color: #ffffff;
+    background-color: #036;
+    border-color: #ffffff;
     border-radius: 10px;
     padding: 5px;
     width: 80px;
     font-size: 18px;
     margin-left: 15px;
     cursor: pointer;
+    
 }
+
+.header button a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .voltar{
     margin-left: 5%;
@@ -314,19 +321,6 @@ footer .especialista {
 /* Para monitores (> 1024px) */
 @media (min-width: 1920px) {
 
-    .header {
-        margin-left: 100px; 
-    }
-    header nav .usuario p {
-        font-size: 32px;
-    }
-    
-
-    .header button {
-        padding: 8px 15px; 
-        width: 100px;
-        font-size: 20px;
-    }
 
     .voltar img{
         width: 45px;
