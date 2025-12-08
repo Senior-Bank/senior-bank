@@ -5,15 +5,20 @@ const btnCancelar = document.getElementById('btn-cancelar');
 
 function abrirPopup() { 
     popup.style.display = 'block';
-    console.log('1')
 };
 
 function fecharPopup() {
     popup.style.display = 'none'; 
-    console.log('1')
 };
 
+function confirmacaoPix() {
+    alert('Pagamento via Pix confirmado! Obrigado por sua compra.');
+    fecharPopup();
+}
 
+
+
+btnConfirmar.addEventListener('click', confirmacaoPix);
 pixEnviar.addEventListener('click',  abrirPopup);
 btnCancelar.addEventListener('click', fecharPopup);
 
